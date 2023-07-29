@@ -252,6 +252,7 @@ public class VideoCompressPlugin: NSObject, FlutterPlugin {
             let jsonString = Utility.keyValueToJson(json)
             result(jsonString)
         })
+        self.exporter = exporter
     }
     
     private func cancelCompression(_ result: FlutterResult) {
