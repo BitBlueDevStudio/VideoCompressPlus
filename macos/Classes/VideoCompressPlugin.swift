@@ -255,8 +255,8 @@ public class VideoCompressPlugin: NSObject, FlutterPlugin {
     }
     
     private func cancelCompression(_ result: FlutterResult) {
-        exporter?.cancelExport()
         stopCommand = true
+        exporter?.cancelExport()
         result("")
     }
     
